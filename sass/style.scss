@@ -1,43 +1,144 @@
 @font-face {
-	font-family: IndieFlower; 
-	src: url(../fonts/IndieFlower.ttf); 
+	font-family: OpenSansCondensed-Light; 
+	src: url(../fonts/OpenSansCondensed-Light.ttf); 
+	font-family: PT_Sans-Web-Regular; 
+	src: url(../fonts/PT_Sans-Web-Regular.ttf);
 }
 
 
-.linear{
-	position: absolute;
-	top:2rem;
-	width: 2rem;	
-	background: red;
-	animation: spin 0.5s linear infinite,one 10s linear infinite;
-}
+$lightgrey:#dcdcdc;
+$grey:#777777;
+$tel:#767676;
+$withe:#ffffff;
+$darkgrey: #444444;
+$pagination: #333;
 
 
-@keyframes spin {
-	0% {
-		transform: rotate(180deg);
+
+@media screen and (min-width: 768px){	
+	.header-top{
+		background: $lightgrey;
+		padding-top: 45px;
+		img{
+			padding-top: 20px;
+			padding-bottom: 65px;
+		}
 	}
-	100% {
-		transform: rotate(0deg);
+	.header-bottom{
+		background: $grey;
+		.text-decoration{
+			text-decoration: underline;
+		}
+	}
+	.header-tel {
+		a{
+			color: $tel;
+			font-family: "Open Sans - Condensed Light";
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 46px;
+			letter-spacing: 1px; 
+		}
+		p{
+			margin-bottom: 0;
+		}
+		button{
+			color: $tel;
+			font-family: "PT Sans";
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 26px;
+			letter-spacing: 0.6px;
+			margin-left: 350px;
+			padding: 0;
+			border-bottom: 2px dashed $tel;
+		}
+	}
+	.nav-header-menu{
+		a{
+			color: $withe;
+			font-family: "PT Sans";
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 0.75px;
+			padding: 0;
+			margin: 20px;	
+		}
+	/* a:before{
+		content:"❘";
+		margin-right: 30px;	
+	} */
+}
+.breadcrumb .line{
+	text-decoration: underline;
+}
+.appliances{	
+	.aside-submenu{
+		li{
+			list-style: disc;
+			margin-left: 30px;
+		}
+
+	}
+	.line{
+		text-decoration: underline;
+	}
+	.bold{
+		font-weight: 600;
 	}
 }
-@keyframes one {
-	0%{
-		left:3rem;
-		height: 2rem;
+.article{
+	background: $lightgrey !important;
+	border: 10px solid $withe;	
+	.img-top{
+		width: 100%;
 	}
-	49%{
-		height: 2rem;
+	h5{
+		color: $tel;
+		font-family: "PT Sans";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 18px;
 	}
-	50%{
-		left:80rem;
-		height: 1rem;
+	span{
+		color: $darkgrey;
+		font-family: "PT Sans";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 18px;
 	}
-	51%{
-		height: 2rem;
+}
+.content-pagination li a{
+	border: 2px solid $withe;
+}
+.content-pagination .active .page-link{
+	color:$pagination !important;
+	background: $withe !important;
+	border-color: $withe !important;
+	font-weight: 700;
+}
+.description{
+	column-count: 2;
+	column-width:45%;
+	column-gap: 2rem;
+	margin-bottom: 70px;
+}
+footer{
+	background: $grey;
+	padding: 50px 0 50px 0;
+	color:$withe;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	.nav-footer a{
+		color: $withe;
+		font-family: "PT Sans";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+		text-decoration: underline;
 	}
-	100%{
-		left:3rem;
-		height: 2rem;
-	}
+}
+
 }

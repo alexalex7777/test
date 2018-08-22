@@ -1,31 +1,103 @@
+@charset "UTF-8";
 @font-face {
-  font-family: IndieFlower;
-  src: url(../fonts/IndieFlower.ttf); }
+  font-family: OpenSansCondensed-Light;
+  src: url(../fonts/OpenSansCondensed-Light.ttf);
+  font-family: PT_Sans-Web-Regular;
+  src: url(../fonts/PT_Sans-Web-Regular.ttf); }
 
-.linear {
-  position: absolute;
-  top: 2rem;
-  width: 2rem;
-  background: red;
-  animation: spin 0.5s linear infinite,one 10s linear infinite; }
-
-@keyframes spin {
-  0% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(0deg); } }
-
-@keyframes one {
-  0% {
-    left: 3rem;
-    height: 2rem; }
-  49% {
-    height: 2rem; }
-  50% {
-    left: 80rem;
-    height: 1rem; }
-  51% {
-    height: 2rem; }
-  100% {
-    left: 3rem;
-    height: 2rem; } }
+@media screen and (min-width: 768px) {
+  .header-top {
+    background: #dcdcdc;
+    padding-top: 45px; }
+    .header-top img {
+      padding-top: 20px;
+      padding-bottom: 65px; }
+  .header-bottom {
+    background: #777777; }
+    .header-bottom .text-decoration {
+      text-decoration: underline; }
+  .header-tel a {
+    color: #767676;
+    font-family: "Open Sans - Condensed Light";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 1px; }
+  .header-tel p {
+    margin-bottom: 0; }
+  .header-tel button {
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    margin-left: 350px;
+    padding: 0;
+    border-bottom: 2px dashed #767676; }
+  .nav-header-menu {
+    /* a:before{
+		content:"❘";
+		margin-right: 30px;	
+	} */ }
+    .nav-header-menu a {
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.75px;
+      padding: 0;
+      margin: 20px; }
+  .breadcrumb .line {
+    text-decoration: underline; }
+  .appliances .aside-submenu li {
+    list-style: disc;
+    margin-left: 30px; }
+  .appliances .line {
+    text-decoration: underline; }
+  .appliances .bold {
+    font-weight: 600; }
+  .article {
+    background: #dcdcdc !important;
+    border: 10px solid #ffffff; }
+    .article .img-top {
+      width: 100%; }
+    .article h5 {
+      color: #767676;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px; }
+    .article span {
+      color: #444444;
+      font-family: "PT Sans";
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 18px; }
+  .content-pagination li a {
+    border: 2px solid #ffffff; }
+  .content-pagination .active .page-link {
+    color: #333 !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    font-weight: 700; }
+  .description {
+    column-count: 2;
+    column-width: 45%;
+    column-gap: 2rem;
+    margin-bottom: 70px; }
+  footer {
+    background: #777777;
+    padding: 50px 0 50px 0;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; }
+    footer .nav-footer a {
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-decoration: underline; } }
