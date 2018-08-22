@@ -1,0 +1,43 @@
+@font-face {
+	font-family: IndieFlower; 
+	src: url(../fonts/IndieFlower.ttf); 
+}
+
+
+.linear{
+	position: absolute;
+	top:2rem;
+	width: 2rem;	
+	background: red;
+	animation: spin 0.5s linear infinite,one 10s linear infinite;
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes one {
+	0%{
+		left:3rem;
+		height: 2rem;
+	}
+	49%{
+		height: 2rem;
+	}
+	50%{
+		left:80rem;
+		height: 1rem;
+	}
+	51%{
+		height: 2rem;
+	}
+	100%{
+		left:3rem;
+		height: 2rem;
+	}
+}
